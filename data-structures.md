@@ -85,9 +85,46 @@ console.log(sedan in car);
 // → false
 ```
 
-To view an object's properties you can use the `.keys` method.
+To view an object's properties you can use the `Object.keys` function. This will return a array of strings from the object' properties.
 ```js
 console.log(Object.keys({x: 0, y: 0, z: 2}));
 // → ["x", "y", "z"]
 ```
+
+The object `Object.assign` function copies the properties from one object into an other object.
+```js
+let objectA = {a: 1, b: 2};
+Object.assign(objectA, {b: 3, c: 4});
+console.log(objectA);
+// → {a: 1, b: 3, c: 4}
+```
+## New loops
+```js
+//old loop
+for (let i = 0; i < JOURNAL.length; i++) {
+  let entry = JOURNAL[i];
+}
+
+//new shorter loop 
+//don't yet understand exactly how this one works
+for (let entry of JOURNAL) {
+  console.log(`${entry.events.length} events.`);
+}
+```
+
+## Mutability
+You can't change the values of: 
+- `numbers`
+- `strings`
+- `booleans`
+You can combine them or assign new values to them, but can't change.
+
+You can change the values of:
+-`properties` of objects
+
+## Math object
+Math is an object that contains multiple functions. These functions are inside this object to The most usefull ones are:
+- `Math.max`
+- `Math.min`
+- `Math.random`?
 
