@@ -1,5 +1,0 @@
-#Concepts
-
-##Scopes
-###Global
-###Local
